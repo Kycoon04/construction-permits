@@ -5,3 +5,11 @@
 .cards{
 margin: 50px;
 }
+.separate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.forms{
+  margin: 35px;
+}

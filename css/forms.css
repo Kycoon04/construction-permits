@@ -1,0 +1,54 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  /* Form styles */
+  .form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  /* Specific styles */
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .col-md-4 {
+    float: left;
+    width: 33.33%;
+    padding: 0 10px;
+  }
+  
+  .control-label {
+    text-align: right;
+  }
+  
+  select {
+    height: 30px;
+  }
+  .separate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
