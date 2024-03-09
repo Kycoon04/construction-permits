@@ -1,186 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/functions/loader.js"></script>
+  <title>Document</title>
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg" style="margin:5px;">
-        <div class="container-fluid">
-          <img src="/img/logo.jpg" height="70px" href="#">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-      
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Trámites
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Tramites en Línea</a></li>
-                      <li><a class="dropdown-item" href="#">Pago en Línea</a></li>
-                      <li><a class="dropdown-item" href="#">Ciudadanos</a></li>
-                      <li><a class="dropdown-item" href="#">Empresas</a></li>
-                      <li><a class="dropdown-item" href="/html/permit-requirements.html">Permisos de Construcción</a></li>
-                    </ul>
-                  </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Servicios
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Cementerios Municipales</a></li>
-                    <li><a class="dropdown-item" href="#">Policía Municipal</a></li>
-                    <li><a class="dropdown-item" href="#">Biblioteca</a></li>
-                    <li><a class="dropdown-item" href="#">Iniciativas ambientales</a></li>
-                    <li><a class="dropdown-item" href="#">Poli deportivo</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  La Municipalidad
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Conozcamos</a></li>
-                    <li><a class="dropdown-item" href="#">Alcaldía</a></li>
-                    <li><a class="dropdown-item" href="#">Misión y visión</a></li>
-                    <li><a class="dropdown-item" href="#">Planes e informes</a></li>
-                    <li><a class="dropdown-item" href="#">Organigrama</a></li>
-                </ul>
-              </li>
+  <div class="spinner-wrapper">
+    <div class="spinner-grow text-primary" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-grow text-secondary" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-grow text-success" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-grow text-danger" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-grow text-warning" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+
+  </div>
+  <nav class="navbar navbar-expand-lg" style="margin:5px;">
+    <div class="container-fluid">
+      <img src="/img/logo.jpg" height="70px" href="#">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Trámites
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Tramites en Línea</a></li>
+              <li><a class="dropdown-item" href="#">Pago en Línea</a></li>
+              <li><a class="dropdown-item" href="#">Ciudadanos</a></li>
+              <li><a class="dropdown-item" href="#">Empresas</a></li>
+              <li><a class="dropdown-item" href="/html/permit-requirements.html">Permisos de Construcción</a></li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Buscar aquí" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
-          </div>
-        </div>
-      </nav>
-
-      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="5000">
-            <img src="/img/banner1.jpg"  class="d-flex w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="/img/banner2.jpg" class="d-flex w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="/img/banner3.jpg" class="d-flex w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Servicios
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Cementerios Municipales</a></li>
+              <li><a class="dropdown-item" href="#">Policía Municipal</a></li>
+              <li><a class="dropdown-item" href="#">Biblioteca</a></li>
+              <li><a class="dropdown-item" href="#">Iniciativas ambientales</a></li>
+              <li><a class="dropdown-item" href="#">Poli deportivo</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              La Municipalidad
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Conozcamos</a></li>
+              <li><a class="dropdown-item" href="#">Alcaldía</a></li>
+              <li><a class="dropdown-item" href="#">Misión y visión</a></li>
+              <li><a class="dropdown-item" href="#">Planes e informes</a></li>
+              <li><a class="dropdown-item" href="#">Organigrama</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar aquí" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
       </div>
+    </div>
+  </nav>
 
-      <div class="titules">
-        <h1>Agencia asesora de Construcción</h1>
-        <p>Agencia que se dedica a la asesoría de construcciones <br> empresariales y ciudadanas</p>
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="5000">
+        <img src="/img/banner1.jpg" class="d-flex w-100" alt="...">
       </div>
-
-    <div class="cards">
-      <div class="row row-cols-1 row-cols-md-2 g-4">
-        <div class="col">
-          <div class="card">
-            <img src="/img/about.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="/img/about2.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-          </div>
-        </div>
+      <div class="carousel-item">
+        <img src="/img/banner2.jpg" class="d-flex w-100" alt="...">
       </div>
+      <div class="carousel-item">
+        <img src="/img/banner3.jpg" class="d-flex w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
 
-    <div class="card cards">
-      <h5 class="card-header">Featured</h5>
-      <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-    <div class="card cards">
-      <h5 class="card-header">Featured</h5>
-      <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
+  <div class="titules">
+    <h1>Agencia asesora de Construcción</h1>
+    <p>Agencia que se dedica a la asesoría de construcciones <br> empresariales y ciudadanas</p>
+  </div>
 
   <div class="cards">
-  <div class="row row-cols-1 row-cols-md-3 g-4">
-    <div class="col">
-      <div class="card h-100">
-        <img src="/img/about3.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="/img/about.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Soluciones de Construcción para Empresas</h5>
+            <p class="card-text">Nuestra agencia asesora de construcción ofrece soluciones integrales para empresas,
+              brindando asesoramiento especializado en proyectos empresariales de construcción. Desde el diseño inicial
+              hasta la ejecución y gestión del proyecto, nuestro equipo experto está comprometido a garantizar que cada
+              aspecto de la construcción cumpla con los estándares más altos de calidad, eficiencia y seguridad,
+              permitiendo
+              a las empresas alcanzar sus objetivos de desarrollo y crecimiento de manera efectiva y rentable.</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img src="/img/about4.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a short card.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img src="/img/about5.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img src="/img/about6.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <div class="col">
+        <div class="card">
+          <img src="/img/about2.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Planes e Informes de Construcción a Medida</h5>
+            <p class="card-text">En nuestra agencia asesora de construcción, ofrecemos una amplia gama de servicios de
+              consultoría
+              que incluyen la elaboración de planes detallados y la preparación de informes especializados. Nuestro
+              equipo de expertos
+              trabaja en estrecha colaboración con cada cliente para desarrollar planes personalizados que se adapten a
+              las necesidades
+              específicas de su proyecto de construcción, ya sea empresarial o ciudadano. Además, proporcionamos
+              informes exhaustivos que
+              ofrecen análisis detallados y recomendaciones clave para garantizar el éxito y la eficiencia de cada fase
+              del proceso de
+              construcción.</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+
+  <div class="card cards">
+    <h5 class="card-header">Permisos de Construcción</h5>
+    <div class="card-body">
+      <h5 class="card-title">Gestión Integral de Permisos de Construcción</h5>
+      <p class="card-text">En nuestra agencia asesora de construcción, nos encargamos de facilitar todo el proceso de
+        obtención de
+        permisos de construcción para nuestros clientes, tanto empresas como particulares. Desde el inicio del proyecto
+        hasta su culminación,
+        nuestro equipo se encarga de gestionar todos los trámites administrativos y legales necesarios, asegurando el
+        cumplimiento de todas las
+        regulaciones y normativas vigentes.</p>
+      <a href="/html/permit-requirements.html" class="btn btn-primary">Formulario</a>
+    </div>
+  </div>
+  <div class="card cards">
+    <h5 class="card-header">Poli deportivo</h5>
+    <div class="card-body">
+      <h5 class="card-title">Diseño y Desarrollo de Centros Recreativos Innovadores</h5>
+      <p class="card-text">Nuestra agencia asesora de construcción se especializa en el diseño y desarrollo de centros
+        recreativos únicos y atractivos.
+        Trabajamos en estrecha colaboración con nuestros clientes, ya sean empresas o comunidades, para crear espacios
+        recreativos que satisfagan las
+        necesidades y expectativas de los usuarios. Desde parques acuáticos hasta complejos deportivos, nuestro equipo
+        experto ofrece soluciones creativas y
+        funcionales que maximizan el disfrute y la diversión. Nos comprometemos a proporcionar un servicio integral que
+        abarca desde la planificación inicial
+        hasta la ejecución del proyecto, asegurando resultados excepcionales que superen las expectativas de nuestros
+        clientes.</p>
+      <a href="/html/permit-requirements.html" class="btn btn-primary">Formulario</a>
+    </div>
+  </div>
+
+  <div class="cards">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="/img/about3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Visión</h5>
+            <p class="card-text">Ser reconocidos como la principal agencia asesora de construcción,
+              líder en la creación de proyectos innovadores y sostenibles que transformen comunidades
+              y mejoren la calidad de vida de las personas.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="/img/about4.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Misión</h5>
+            <p class="card-text">Proporcionar servicios de asesoría de construcción de alta calidad,
+              enfocados en la excelencia, la eficiencia y la sostenibilidad. Nos comprometemos a trabajar
+              en estrecha colaboración con nuestros clientes para entender sus necesidades y ofrecer
+              soluciones personalizadas que superen sus expectativas. Nuestra misión es impulsar el progreso
+              y el desarrollo a través de la construcción de espacios funcionales, seguros y estéticamente
+              atractivos.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="/img/about5.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">¡Conozcamos! </h5>
+            <p class="card-text">En nuestra agencia asesora de construcción, estamos comprometidos con la excelencia
+              en cada proyecto que emprendemos. Desde la planificación inicial hasta la finalización del proyecto,
+              nuestro equipo experto se dedica a brindar soluciones innovadoras y personalizadas que superan las
+              expectativas de nuestros clientes. Descubra cómo podemos ayudarlo a hacer realidad sus proyectos de
+              construcción de manera eficiente y efectiva. ¡Contáctenos hoy mismo para comenzar!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div class="card text-center">
-      <div class="card-body">
-        <h5 class="card-title">¡Estamos para atenderle!</h5>
-        <p class="card-text">Nuestro único medio de contacto es por medio de nuestro correo electrónico.</p>
-        <a href="#" class="btn btn-primary">Escríbenos aquí</a>
-      </div>
-      <div class="card-footer text-body-secondary">
+    <div class="card-body">
+      <h5 class="card-title">¡Estamos para atenderle!</h5>
+      <p class="card-text">Nuestro único medio de contacto es por medio de nuestro correo electrónico.</p>
+      <a href="#" class="btn btn-primary">Escríbenos aquí</a>
+    </div>
+    <div class="card-footer text-body-secondary">
       This website and its content is copyright of belval - © belval 2024. All rights reserved.
-      </div>
+    </div>
   </div>
 
 </body>
+
 </html>

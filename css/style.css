@@ -1,15 +1,38 @@
-.titules{
+.titules {
   text-align: center;
   margin: 50px;
 }
-.cards{
-margin: 50px;
+
+.cards {
+  margin: 50px;
 }
+
 .separate {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.forms{
+
+.forms {
   margin: 35px;
+}
+
+.spinner-wrapper {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s;
+  margin: 3px;
+}
+
+.spinner-grow {
+  height: 60px;
+  width: 60px;
 }

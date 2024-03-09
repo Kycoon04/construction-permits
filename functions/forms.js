@@ -1,20 +1,32 @@
-
-(() => {
-    'use strict'
-  
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    const forms = document.querySelectorAll('.needs-validation')
-  
-    // Loop over them and prevent submission
-    Array.from(forms).forEach(form => {
-      form.addEventListener('submit', event => {
-        if (!form.checkValidity()) {
-          event.preventDefault()
-          event.stopPropagation()
+(function () {
+  'use strict'
+  var forms = document.querySelectorAll('.needs-validation')
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        const negative = document.getElementsByClassName("toast-container")[0];
+        if (form.checkValidity()) {
+          console.log('bsSend')
+          negative.style.opacity = "100";
+          setTimeout(function () {
+            window.location.href = '../index.html'; // Cambia la URL de destino al HTML dentro del proyecto
+          }, 2000);
+        } else {
+          negative.style.opacity = "0";
         }
-  
+        event.preventDefault()
+        event.stopPropagation()
         form.classList.add('was-validated')
-        console.log("ssdfgdfgfg")
       }, false)
     })
-  })()
+})()
+
+const toastTrigger = document.getElementById('liveToastBtn')
+const toastLiveExample = document.getElementById('liveToast')
+
+if (toastTrigger) {
+  const toastBootstrap = new bootstrap.Toast(toastLiveExample);
+  toastTrigger.addEventListener('click', () => {
+    toastBootstrap.show()
+  })
+}
