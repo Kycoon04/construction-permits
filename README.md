@@ -1,5 +1,5 @@
 # quiz-one
-HTML5,CSS with Boostrap, programming IV quiz, recreating a web page for an Municipality.
+HTML5, JavaScript, CSS3 with Boostrap, programming IV quiz, recreating a web page for an Municipality.
  
 ## Information
 This system is created to manage municipal services. Its main function is to provide citizens with the ability to request construction permits through a form.
@@ -25,5 +25,5 @@ git clone https://github.com/Kycoon04/quiz-one.git
 You can use the [Netlify](https://main--belval.netlify.app/) tool to visualize the web page.
 
  # Collaborators
-- Jose ManueL Valverde Valverde (Kycoon04)
-- Anderson Ferández Bermúdez (Anderson)
+- José Manuel Valverde Valverde (Kycoon04)
+- Anderson Fernández Bermúdez (Anderson)
